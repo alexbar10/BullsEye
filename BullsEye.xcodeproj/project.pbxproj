@@ -125,10 +125,10 @@
 		4DA8DE50209A68B10024785C /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				4DA8DE2E209A688E0024785C /* Info.plist */,
 				4DA8DE22209A688E0024785C /* AppDelegate.swift */,
 				4DA8DE29209A688E0024785C /* Assets.xcassets */,
 				4DA8DE2B209A688E0024785C /* LaunchScreen.storyboard */,
-				4DA8DE2E209A688E0024785C /* Info.plist */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -436,7 +436,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJAC2DB79M;
-				INFOPLIST_FILE = BullsEye/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BullsEye/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alejandro.barranco.BullsEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -451,7 +452,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJAC2DB79M;
-				INFOPLIST_FILE = BullsEye/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BullsEye/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alejandro.barranco.BullsEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";

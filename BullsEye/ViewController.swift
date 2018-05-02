@@ -14,12 +14,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func showHelloAlert() {
+        let alert = UIAlertController(title: "Hello World!", message: "This is my first app", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
+        
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
     }
-
-
+    
+//    @IBAction func knockknock() {
+//        let alert = UIAlertController(title: "knock knock!", message: "Who's there?", preferredStyle: .alert)
+//        let action = UIAlertAction(title: "Litle old lady", style: .default, handler: nil)
+//        
+//        alert.addAction(action)
+//        
+//        present(alert, animated: true, completion: nil)
+//    }
 }
-
