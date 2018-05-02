@@ -97,12 +97,9 @@
 		4DA8DE21209A688E0024785C /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
-				4DA8DE22209A688E0024785C /* AppDelegate.swift */,
 				4DA8DE24209A688E0024785C /* ViewController.swift */,
 				4DA8DE26209A688E0024785C /* Main.storyboard */,
-				4DA8DE29209A688E0024785C /* Assets.xcassets */,
-				4DA8DE2B209A688E0024785C /* LaunchScreen.storyboard */,
-				4DA8DE2E209A688E0024785C /* Info.plist */,
+				4DA8DE50209A68B10024785C /* Others */,
 			);
 			path = BullsEye;
 			sourceTree = "<group>";
@@ -123,6 +120,17 @@
 				4DA8DE44209A688F0024785C /* Info.plist */,
 			);
 			path = BullsEyeUITests;
+			sourceTree = "<group>";
+		};
+		4DA8DE50209A68B10024785C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				4DA8DE22209A688E0024785C /* AppDelegate.swift */,
+				4DA8DE29209A688E0024785C /* Assets.xcassets */,
+				4DA8DE2B209A688E0024785C /* LaunchScreen.storyboard */,
+				4DA8DE2E209A688E0024785C /* Info.plist */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
