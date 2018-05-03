@@ -10,18 +10,41 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var currenrValue: Int = 0
+    @IBOutlet weak var labelTargetValue: UILabel!
+    @IBOutlet weak var slider: UISlider!
+    var targetValue = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        currenrValue = lroundf(slider.value)
+        startNewRound()
+    }
+    
+    func startNewRound() {
+        targetValue = 1 + Int(arc4random_uniform(100))
+        labelTargetValue.text = "\(targetValue)"
+        currenrValue = 50
+        slider.value = Float(currenrValue)
+    }
+    
+    @IBAction func sliderMoved(_ slider: UISlider) {
+        print("The value of slider is now: \(slider.value)")
+        currenrValue = lroundf(slider.value)
     }
     
     @IBAction func showHelloAlert() {
-        let alert = UIAlertController(title: "Hello World!", message: "This is my first app", preferredStyle: .alert)
+        let message = "The value of the slider is: \(currenrValue)" +
+        "\nThe target value is: \(targetValue)"
+        let alert = UIAlertController(title: "Hello World!", message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
         
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
+        
+        startNewRound()
     }
     
 //    @IBAction func knockknock() {
